@@ -7,7 +7,7 @@ import { RestService } from '../Dbservices/rest.service';
   selector: 'app-addemp',
   templateUrl: './addemp.component.html',
   styleUrls: ['./addemp.component.css']
-})
+})  
 export class AddempComponent implements OnInit {
 
   constructor(private restService:RestService) {
