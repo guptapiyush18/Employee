@@ -1,0 +1,7 @@
+button{
+    background-color: white;
+    border: solid 1px
+}
+button:hover{
+    color:red
+}

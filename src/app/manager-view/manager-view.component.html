@@ -1,0 +1,34 @@
+
+<h2>My Profile</h2>
+<hr>
+<pre>
+User Name    : {{user.id}}
+Full Name    : {{user.Name}}
+Address      : {{user.Address}}
+E-mail       : {{user.Email}}
+Mobile Number: {{user.MobileNumber}}
+Password     : {{user.Password}}  
+Role         : {{user.Role}}
+Salary       : {{user.Salary}}
+</pre>
+
+Enter UserName:<input type="text" #uid (blur)="uuid(uid.value)">
+
+<button type="button" (click)="changepass()">Enter</button>
+
+<div *ngIf="cp">
+  <pre>
+    User Name    : {{user1.id}}
+    Full Name    : {{user1.Name}}
+    Address      : {{user1.Address}}
+    E-mail       : {{user1.Email}}
+    Mobile Number: {{user1.MobileNumber}}
+    Password     : {{user1.Password}}  
+    Role         : {{user1.Role}}
+    Salary       : {{user1.Salary}}
+    </pre>
+    Salary:<input type="text"  #salary>
+    <input type="button" value="Change" (click)="change(salary.value)"><br>
+    
+   
+</div>

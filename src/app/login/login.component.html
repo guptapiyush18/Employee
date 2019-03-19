@@ -1,0 +1,15 @@
+<div>
+  <form>
+    <input type="text" placeholder="Username" #user><br>
+    <input type="password" placeholder="Password" #pass> <br>
+    <select #op>
+      <option disabled>Select Role</option>
+      <option value="Employee">Employee</option>
+      <option value="Manager">Manager</option>
+      <option value="Administrator">Administrator</option>
+    </select><br>
+    <button type="button" (click)="nav(user.value,pass.value,op.value)">Login</button> 
+    <input type="reset">
+  </form>  
+  <a routerLink="addemp">New User</a>
+</div>

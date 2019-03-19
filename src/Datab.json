@@ -1,0 +1,44 @@
+{
+  "Datab": [
+    {
+      "id": "768976",
+      "Name": "Piyush Gupta",
+      "Address": "Ludhiana, Punjab",
+      "Email": "piyushkapss@gmail.com",
+      "MobileNumber": 7814894440,
+      "Password": "asd",
+      "Role": "Administrator",
+      "Salary": 90000
+    },
+    {
+      "id": "768970",
+      "Name": "Rahul Gupta",
+      "Address": "Amritsar, Punjab",
+      "Email": "rahu@gmail.com",
+      "MobileNumber": 1258794440,
+      "Password": "asdasd",
+      "Role": "Manager",
+      "Salary": 50000
+    },
+    {
+      "id": "768972",
+      "Name": "Naveen Kumar",
+      "Address": "Kharar",
+      "Email": "navcv@gmail.com",
+      "MobileNumber": "1234569870",
+      "Password": "asd",
+      "Role": "Manager",
+      "Salary": "60000"
+    },
+    {
+      "id": "768977",
+      "Name": "Ritik Arora",
+      "Address": "Haryana",
+      "Email": "ritik@gmail.com",
+      "MobileNumber": "7834569870",
+      "Password": "asdf",
+      "Role": "Employee",
+      "Salary": "40000"
+    }
+  ]
+}

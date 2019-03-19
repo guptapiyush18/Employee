@@ -1,0 +1,22 @@
+
+<h2>My Profile</h2>
+<hr>
+<pre>
+User Name    : {{user.id}}
+Full Name    : {{user.Name}}
+Address      : {{user.Address}}
+E-mail       : {{user.Email}}
+Mobile Number: {{user.MobileNumber}}
+Password     : {{user.Password}}  
+Role         : {{user.Role}}
+Salary       : {{user.Salary}}
+</pre>
+<button type="button" (click)="changepass()">Change Password?</button>
+
+<div *ngIf="cp">
+
+    Password:<input type="text" #pass>
+    <input type="button" value="Change" (click)="change(pass.value)"><br>
+
+   
+</div>

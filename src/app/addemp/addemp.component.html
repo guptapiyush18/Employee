@@ -1,0 +1,39 @@
+
+<div *ngIf="app">
+  Enter UserName:<input type="text"  #idd>
+  <button type="button" (click)="getItem(idd.value)">Submit</button>
+</div>
+
+<div *ngIf="!app">
+  <form >
+    <pre>
+      User Id         :<input type="text" disabled="{{flag1}}" [value]=user.id #id>
+  
+      Name            :<input type="text" [disabled]="flag1" [value]=user.Name #name>
+  
+      Address         :<input type="text" [disabled]="!flag1" #add>
+  
+      Email           :<input type="text"[disabled]="!flag1" #email>
+  
+      Mobile Number   :<input type="text"[disabled]="!flag1" #mob>
+  
+      Password        :<input type="password"[disabled]="!flag1" #pass>
+  
+      Confirm Password:<input type="password"[disabled]="!flag1"#passre>
+  
+      Role            :<select #op [disabled]="flag1" (change)="setsal(op.value)" [value]=user.Role>
+        <option disabled>Select Role</option>
+        <option value="Employee">Employee</option>
+        <option value="Manager">Manager</option>
+        <option value="Administrator">Administrator</option>
+      </select>
+  
+      Salary          :<input type="text" [disabled]="flag1" [value]="salar" #sal>
+  
+      <button type="button" (click)="register(id.value,name.value,add.value,email.value,mob.value,pass.value,passre.value,op.value,sal.value)">Register</button>
+    </pre>
+  </form>
+  
+
+</div>
+
